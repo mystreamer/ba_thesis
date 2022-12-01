@@ -4,3 +4,6 @@
 [submodule "external_repos/direct_parsing_to_sent_graph"]
 	path = external_repos/direct_parsing_to_sent_graph
 	url = https://github.com/mystreamer/direct_parsing_to_sent_graph.git
+[submodule "external_repos/stancer_setup"]
+	path = external_repos/stancer_setup
+	url = https://gitlab.ifi.uzh.ch/clstancer/stancer_setup.git
