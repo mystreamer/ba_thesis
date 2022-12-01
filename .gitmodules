@@ -1,0 +1,3 @@
+[submodule "external_repos/R-BERT"]
+	path = external_repos/R-BERT
+	url = https://github.com/mystreamer/R-BERT.git
