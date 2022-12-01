@@ -1,3 +1,6 @@
 [submodule "external_repos/R-BERT"]
 	path = external_repos/R-BERT
 	url = https://github.com/mystreamer/R-BERT.git
+[submodule "external_repos/direct_parsing_to_sent_graph"]
+	path = external_repos/direct_parsing_to_sent_graph
+	url = https://github.com/mystreamer/direct_parsing_to_sent_graph.git
