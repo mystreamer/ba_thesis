@@ -7,3 +7,6 @@
 [submodule "external_repos/stancer_setup"]
 	path = external_repos/stancer_setup
 	url = https://gitlab.ifi.uzh.ch/clstancer/stancer_setup.git
+[submodule "nb_ba"]
+	path = nb_ba
+	url = https://github.com/mystreamer/nb_ba.git
