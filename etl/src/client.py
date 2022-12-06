@@ -1,4 +1,4 @@
-from sqlalchemy import create_engine
+# from sqlalchemy import create_engine
 import logging
 import os
 
@@ -23,10 +23,10 @@ class Client:
         """
 
 
-        try:
-            self.engine = create_engine(f'postgresql+psycopg2://{params.user}:{params.password}@{params.host}/{params.database}')
-            self.conn = self.engine.connect()
-        except Exception as e:
-            logger.warning('Could not connect to the database on client.py file.')
-            logger.warning('Verify your credentials for {params.user}.')
-            logger.warning(e)
+        # try:
+        #     self.engine = create_engine(f'postgresql+psycopg2://{params.user}:{params.password}@{params.host}/{params.database}')
+        #     self.conn = self.engine.connect()
+        # except Exception as e:
+        #     logger.warning('Could not connect to the database on client.py file.')
+        #     logger.warning('Verify your credentials for {params.user}.')
+        #     logger.warning(e)

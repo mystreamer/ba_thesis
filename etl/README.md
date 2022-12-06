@@ -1,6 +1,8 @@
 etl
 ==============================
 
+Origin of **etl** folder structure: https://github.com/aguiarandre/etl-pipelines
+
 BA Thesis Data Management
 
 Project Organization

@@ -6,6 +6,8 @@ from nodes import data_preparation
 from nodes import data_storage
 from nodes import data_transform
 from nodes import data_viz
+from nodes import data_train_test_split
+from nodes import data_clean
 from params import Params 
 
 
@@ -39,6 +41,12 @@ def process(client, params):
     """
     data_preparation.run(client, params)
 
+    if not data_clean.done(client, params):
+        data_clean.update(client, params)
+
+    if not data_train_test_split.done(client, params):
+        data_train_test_split.update(client, params)
+
     if not data_gathering.done(client, params):
         data_gathering.update(client, params)
 
@@ -53,6 +61,8 @@ def process(client, params):
 
 
 if __name__ == '__main__': 
+
+    # add argparse with --process train, test, dev, all
 
     params = Params()
 
