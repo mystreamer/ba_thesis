@@ -67,4 +67,7 @@ Primary keywords used:
 - Swiss Tobacco
 - Lungenliga
 - Krebsliga
+
+Daterange:
+    - Full range
 ```
