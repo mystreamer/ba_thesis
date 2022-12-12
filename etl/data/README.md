@@ -57,5 +57,14 @@ version: 1.1
 
 ### 02
 ```
-Not available
+Primary keywords used:
+- Tabakwerbung
+- Tabakproduktegesetz
+- Tabakregulierung
+- FCTC
+- Philip Morris
+- British American
+- Swiss Tobacco
+- Lungenliga
+- Krebsliga
 ```
