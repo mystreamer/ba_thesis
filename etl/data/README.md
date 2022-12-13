@@ -16,8 +16,9 @@ rsync -a --exclude=".*" user@host:~/somedata_path .
 
 | Prefix | Name | Origin | Description
 |---|---|---|---|
-| **01** | BliTaNZZ | Swissdox@Liri | [Query](#01)
-| **02** | Tobacco Dataset | Swissdox@Liri | [Query](#02)
+| **01** | extract.csv | Swissdox@Liri | [Query](#01)
+| **02** | extract.csv | Swissdox@Liri | [Query](#02)
+| **03** | holder_target.txt | Stancer | [Query](#03)
 
 
 ## Descriptions
@@ -70,4 +71,13 @@ Primary keywords used:
 
 Daterange:
     - Full range
+```
+
+### 03
+```
+A dataset of ~130'000 sentences from the Spiegel Corpus masking holders and targets.
+
+Each sentence only masks 1 Holder & 1 Target, but a sentence can appear multiple times in the dataset.
+
+Used for the ORL model training.
 ```
