@@ -10,3 +10,6 @@
 [submodule "nb_ba"]
 	path = nb_ba
 	url = https://github.com/mystreamer/nb_ba.git
+[submodule "external_repos/ORLde"]
+	path = external_repos/ORLde
+	url = https://github.com/mystreamer/ORLde.git
