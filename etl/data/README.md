@@ -8,7 +8,7 @@ Since the data is too large for version control, we use rsync or scp for synchro
 Use rsync:
 
 ```python
-rsync -a --exclude=".*" . massey@rattle.ifi.uzh.ch:/home/user/massey/ba_thesis/etl
+rsync -avP --exclude=".*" . massey@rattle.ifi.uzh.ch:/home/user/massey/ba_thesis/etl
 ```
 
 ## Datasets
