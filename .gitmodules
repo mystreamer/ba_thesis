@@ -13,3 +13,6 @@
 [submodule "external_repos/ORLde"]
 	path = external_repos/ORLde
 	url = https://github.com/mystreamer/ORLde.git
+[submodule "external_repos/semeval22_structured_sentiment"]
+	path = external_repos/semeval22_structured_sentiment
+	url = https://github.com/mystreamer/semeval22_structured_sentiment.git
