@@ -17,7 +17,8 @@ There are 4 different datasets: `tt_03_va_hard`, `tt_03_va_soft`, `tt_06_va_hard
 e.g.,
 
 ```
-cp ./etl/data/raw/thesis_datasets/tt_03_va_hard/*.csv ./etl/data/intermediate/TrainTestSplit
+cp ./etl/data/raw/thesis_datasets/tt_06_va_soft/*.csv ./etl/data/intermediate/TrainTestSplit
+ls -l ./etl/data/intermediate/TrainTestSplit
 ```
 
 To run the **ERRE** System, first run the notebook Perin_Preprocessing:
@@ -37,7 +38,7 @@ Then convert the Perin-Formatted data into the data for the ORL (Entity Recognit
 ls -l ./etl/data/processed/ORLConverter/
 ```
 
-Then run and train the ORL (Entity Recognition) System:
+Then run and train the ORL (Entity Recognition) System (we will run it on rattle, so we must first sync the changes with the server as described in `./etl/data/README.md`):
 
 ```
 ./nb_ba/ORL/OpinionRoleLabeling_NER.ipynb
