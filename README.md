@@ -1,18 +1,36 @@
 # BA Thesis
 
-This repo contains experiment code, the silver-standard generator as well as code for transforming the silver standard into data acceptable for the various experiments conducted.
+This repo contains experiment code, the silver standard generator[^2] as well as code for transforming the silver standard into data acceptable for the various experiments conducted / approaches / systems.
+
+## Replicating the evaluation
+----
+
+Make sure to have set up a virtual envronment under the name of perin as described in the [README of the PERIN fork](https://github.com/mystreamer/direct_parsing_to_sent_graph/tree/352ba47cfe1404fd8f78d34d42968466be4e53a5).
+
+Then you can navigate into `./annex` and either into datasets (model outputs) or annotations (manual annotation of silver standard samples).
+
+In either folder you can run `./eval.sh` to validate the obtained results of the thesis.
+
+## Replicating the entire setup
+---
+
+For replication of the model training and subsequent evaluation you can find the data also in the `./annex/datasets` folder. Each subfolder of `datasets` represents a train-test splitting strategy.
 
 ### Structure
-Experiments are forked from their original authors (as discussed in the thesis), the forks are accessible as submodules in the `/external_repo` folder. <br> <br>
+Experiments are forked from their original authors (as discussed in the thesis), the forks are accessible as submodules in the `/external_repo` folder. `direct_parsing_to_sent_graph` is the only relevant submodule for replicating the approach in the thesis. The README within that submodule highlights the steps to replicate the PERIN experiemtns of the thesis. <br> <br>
 To pull a specific submodule, use: `git submodule update --init external_repo/<submodule_name>`
 <br> <br>
 To get all submodules execute: `git submodule update --init`[^1]
 
-Using the systems:
------
+### Using the ERRE system:
+
+Unlike PERIN; the ERRE system was assembled from tutorials (e.g. [this](https://github.com/sujitpal/ner-re-with-transformers-odsc2022/tree/b713a91ef29956ddb1c31f7d0b5a9c8731c501c5) for the relation extraction part) and hugginface documentation. The instructions how to replicate can be found below:
+
 Place the three dataset splits into the folder `./etl/data/intermediate/TrainTestSplit`.
 
 There are 4 different datasets: `tt_03_va_hard`, `tt_03_va_soft`, `tt_06_va_hard`, `tt_06_va_soft`
+
+**soft** here means that test-train are randomly split. **hard** means that no verb found in training also occurs in test/val.
 
 e.g.,
 
@@ -71,7 +89,9 @@ The last part is for the inference:
 ./nb_ba/ORL_RE_Inference/ORL_RE_Inference.ipynb
 ```
 
-To run the **PERIN** System consult the README in the respective fork.
+As discussed above, to run the **PERIN** System consult the [README](https://github.com/mystreamer/direct_parsing_to_sent_graph/tree/352ba47cfe1404fd8f78d34d42968466be4e53a5) in the respective fork.
 
 
 [^1]: Some submodules are not publicly available.
+<br>
+[^2]: Unfortunately not publicly available.
